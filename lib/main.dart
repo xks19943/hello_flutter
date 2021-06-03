@@ -162,7 +162,6 @@ class FavoriteWidgetState extends State<FavoriteWidget> {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new MaterialApp(
       title: 'StateManage',
       home: new Scaffold(
@@ -182,7 +181,6 @@ class MyApp extends StatelessWidget {
 class TapBoxA extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new TapBoxAState();
   }
 

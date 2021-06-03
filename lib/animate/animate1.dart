@@ -16,7 +16,9 @@ class _LogoAppState extends State<LogoApp> with SingleTickerProviderStateMixin {
   initState() {
     super.initState();
     controller = AnimationController(
-        duration: const Duration(milliseconds: 2000), vsync: this);
+        duration: const Duration(milliseconds: 2000),
+        vsync: this
+    );
     animation = Tween(begin: 0.0, end: 300.0).animate(controller)
       ..addListener(() {
         setState(() {

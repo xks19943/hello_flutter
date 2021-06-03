@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           child: new RaisedButton(
             onPressed: (){
               var url = 'http://httpbin.org/';
-              http.get(url).then((response){
+              http.get(Uri.parse(url)).then((response){
                 print('状态： ${response.statusCode}');
                 print('正文： ${response.body}');
               });
